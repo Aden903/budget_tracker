@@ -1,0 +1,50 @@
+<
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Tracker</title>
+    <!-- Your CSS file is linked correctly here inside the head -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>My Budget Tracker</h1>
+    <p>Track your income and expenses in one place.</p>
+
+    <!-- The form section where you add expenses -->
+    <section id="add-expense">
+        <h2>Add New Expense</h2>
+        <form id="expense-form">
+            <div>
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" name="expense_name" placeholder="Weekend expenses" required>
+            </div>
+            <div>
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="Amount" required>
+            </div>
+            <div>
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- The list area where expenses will display -->
+    <section id="expenses">
+        <h3>Expense History</h3>
+        <ul id="expense-list"></ul>
+    </section>
+
+    <!-- Your JavaScript file is linked at the very bottom of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
